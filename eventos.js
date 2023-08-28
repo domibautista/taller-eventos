@@ -1,6 +1,12 @@
-const button = document.getElementById("button")
+const button = document.getElementById("container");
+const boton = document.getElementById("boton");
 
+boton.addEventListener("click", ()=> {
+    event.stopPropagation()
+    alert("Hola");
+})
 
-button.addEventListener("click", () => {
+container.addEventListener("click", (event) => {
     alert("Hola! Soy el div");
 });
+
